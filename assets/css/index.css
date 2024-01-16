@@ -1,0 +1,122 @@
+.loader {
+  text-align: center;
+}
+.loader span {
+  -webkit-animation: loader 10s infinite linear;
+  /* -moz-animation: loader 10s infinite linear; */
+}
+.loader span:nth-child(5n + 5) {
+  -webkit-animation-delay: 1.3s;
+  /* -moz-animation-delay: 1.3s; */
+}
+.loader span:nth-child(3n + 2) {
+  -webkit-animation-delay: 1.5s;
+  /* -moz-animation-delay: 1.5s; */
+}
+.loader span:nth-child(2n + 5) {
+  -webkit-animation-delay: 1.7s;
+  /* -moz-animation-delay: 1.7s; */
+}
+
+.loader span:nth-child(3n + 10) {
+  -webkit-animation-delay: 2.7s;
+  /* -moz-animation-delay: 2.7s; */
+}
+.loader span:nth-child(7n + 2) {
+  -webkit-animation-delay: 3.5s;
+  /* -moz-animation-delay: 3.5s; */
+}
+.loader span:nth-child(4n + 5) {
+  -webkit-animation-delay: 5.5s;
+  /* -moz-animation-delay: 5.5s; */
+}
+.loader span:nth-child(3n + 7) {
+  -webkit-animation-delay: 8s;
+  /* -moz-animation-delay: 8s; */
+}
+
+@-webkit-keyframes loader {
+  0% {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    background-image: url(/assets/images/svg/leaf.svg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    -webkit-transform:  rotateZ(0deg);
+  }
+  49% {
+    top: 50%;
+    background-image: url(/assets/images/svg/leaf.svg);
+background-repeat: no-repeat;
+background-size:100% 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+
+    -webkit-transform:  rotateZ(130deg);
+  }
+  49% {
+    top: 51%;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    background-image: url(/assets/images/svg/brown_svg.svg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    -webkit-transform:  rotateZ(270deg);
+  }
+  100% {
+    top: 100%;
+    background-image: url(/assets/images/svg/brown_svg.svg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+/* @-moz-keyframes loader {
+  0% {
+    background-image: url(/assets/images/svg/leaf.svg);
+background-repeat: no-repeat;
+background-size:100% 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+
+    -webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  50% {
+    background-image: url(/assets/images/svg/leaf.svg);
+background-repeat: no-repeat;
+background-size:100% 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+
+    -webkit-transform: translate(50px, 600px) rotateZ(130deg);
+  }
+  75% {
+    background-image: url(/assets/images/svg/brown_svg.svg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+
+    -webkit-transform: translate(100px, 900px) rotateZ(270deg);
+  }
+  100% {
+    background-image: url(/assets/images/svg/brown_svg.svg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+
+    -webkit-transform: translate(150px, 1000px) rotateZ(360deg);
+  }
+} */
