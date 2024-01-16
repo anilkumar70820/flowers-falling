@@ -64,7 +64,18 @@ background-size:100% 100%;
     background-image: url(/assets/images/svg/brown_svg.svg);
     background-repeat: no-repeat;
     background-size:100% 100%;
-    -webkit-transform:  rotateZ(270deg);
+    -webkit-transform:  rotateZ(130deg);
+  }
+  75% {
+    top: 75%;
+    background-image: url(/assets/images/svg/brown_svg.svg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+
+    -webkit-transform: rotateZ(270deg);
   }
   100% {
     top: 100%;

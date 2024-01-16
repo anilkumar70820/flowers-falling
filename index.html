@@ -9,58 +9,89 @@
   </head>
   <body class="overflow-x-hidden">
     <div class="loader overflow-hidden relative">
-    <div id="section_1"
-      class="bg_blur h-screen bg-[url(./assets/images/png/tsuku.png)] bg-[length:100%_100%] bg-center flex flex-col relativ"
-    >
-      <div>
-        <span class="absolute top-[7.5%] left-[29.5%]"></span>
-        <span class="absolute top-[2%] right-[25%]"></span>
-        <span class="absolute top-[25%] left-[25.5%]"></span>
-        <span class="absolute top-[10%] right-[15%]"></span>
-        <span class="absolute top-[35%] left-[15%]"></span>
-        <span class="absolute top-[15%] right-[5%]"></span>
-        <span class="absolute top-[50%] left-[15%]"></span>
-        <span class="absolute top-[25%] right-[15%]"></span>
-        <span class="absolute top-[35%] left-[25%]"></span>
-        <span class="absolute top-[35%] right-[5%]"></span>
-        <span class="absolute top-[5%] left-[5%]"></span>
-        
+      <div
+        id="section_1"
+        class="bg_blur h-screen bg-[url(./assets/images/png/tsuku.png)] bg-cover lg:bg-[length:100%_100%] bg-center flex flex-col relativ"
+      >
+        <div>
+          <span class="absolute top-[7.5%] left-[29.5%]"></span>
+          <span class="absolute top-[2%] right-[25%]"></span>
+          <span class="absolute top-[25%] left-[25.5%]"></span>
+          <span class="absolute top-[10%] right-[15%]"></span>
+          <span class="absolute top-[35%] left-[15%]"></span>
+          <span class="absolute top-[15%] right-[5%]"></span>
+          <span class="absolute top-[20%] left-[15%]"></span>
+          <span class="absolute top-[25%] right-[15%]"></span>
+          <span class="absolute top-[35%] left-[25%]"></span>
+          <span class="absolute top-[35%] right-[5%]"></span>
+          <span class="absolute top-[5%] left-[5%]"></span>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center grow -mt-7"
+          id="hero"
+        >
+          <div
+            class="bg-black rounded-[12px] p-4 bg-opacity-40 border border-white"
+          >
+            <h1 class="text-center text-[40px] text-white font-bold h1">
+              Tsukuyomi-no-mikoto
+            </h1>
+            <p
+              class="max-w-[600px] text-center mx-auto mt-4 font-medium text-white text-[20px] mb-0"
+            >
+              The cyclical nature of moon phases has captivated human
+              imagination for centuries, prompting philosophical reflections on
+              the interconnectedness of time, nature, and existence.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="flex flex-col items-center justify-center grow -mt-7" id="hero">
-        <div class="bg-black rounded-[12px] p-4 bg-opacity-40 border border-white">
-<h1 class="text-center text-[40px] text-white font-bold h1"> Tsukuyomi-no-mikoto</h1>
-<p class="max-w-[600px] text-center mx-auto mt-4 font-medium  text-white text-[20px] mb-0">The cyclical nature of moon phases has captivated human imagination for centuries, prompting philosophical reflections on the interconnectedness of time, nature, and existence.</p>
-</div>
-</div>
+      <div
+        class="h-screen bg-[url(./assets/images/png/second_bg.png)] bg-cover lg:bg-[length:100%_100%] bg-center flex flex-col"
+        >
+        <div class="container mx-auto max-w-[1140px] xl:px-0 px-3 flex grow items-center">
+          <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 w-full">
+            <div class="p-6 grid items-center place-items-center bg-black rounded-[12px] p-4 bg-opacity-40 border border-white">
+              <h2 class="text-[32px] font-semibold text-white">Max Supply</h2>
+              <p class="text-[20px] font-medium text-white">29,850</p>
+            </div>
+            <div class="p-6 grid items-center place-items-center bg-black rounded-[12px] p-4 bg-opacity-40 border border-white">
+              <h2 class="text-[32px] font-semibold text-white">Liquidity</h2>
+              <p class="text-[20px] font-medium text-white">95%</p>
+            </div>
+            <div class="md:col-span-1 sm:col-span-2 p-6 grid items-center place-items-center bg-black rounded-[12px] p-4 bg-opacity-40 border border-white">
+              <h2 class="text-[32px] font-semibold text-white">Team</h2>
+              <p class="text-[20px] font-medium text-white">5%</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div
-      class="h-screen bg-[url(./assets/images/png/second_bg.png)] bg-[length:100%_100%] bg-center"
-    ></div>
-</div>
     <!-- ==========  GSAP , SCROLLTRIGGER CDN LINKS ============= -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script>
       gsap.registerPlugin(ScrollTrigger);
-const tl = gsap.timeline({
-    ScrollTrigger:{
-        trigger: "#hero",
-      pin:true,
-      start: "top top",
-      end: "bottom center",
-      markers: true,
-      scrub: true,
-    }
-});
+      const tl = gsap.timeline({
+        ScrollTrigger: {
+          trigger: "#hero",
+          pin: true,
+          start: "top top",
+          end: "bottom center",
+          markers: true,
+          scrub: true,
+        },
+      });
 
-tl.fromTo(".h1",{
-opacity:0
-},
-{
-opacity:1
-}
-
-)
+      tl.fromTo(
+        ".h1",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        }
+      );
     </script>
   </body>
 </html>
