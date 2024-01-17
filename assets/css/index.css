@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .loader {
   text-align: center;
 }
@@ -40,14 +43,14 @@
     width: 50px;
     height: 50px;
     opacity: 1;
-    background-image: url(/assets/images/svg/leaf.svg);
+    background-image: url(/assets/images/png/leaf1.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
     -webkit-transform:  rotateZ(0deg);
   }
   49% {
-    top: 50%;
-    background-image: url(/assets/images/svg/leaf.svg);
+    top: 49%;
+    background-image: url(/assets/images/png/leaf1.png);
 background-repeat: no-repeat;
 background-size:100% 100%;
     width: 50px;
@@ -57,18 +60,18 @@ background-size:100% 100%;
     -webkit-transform:  rotateZ(130deg);
   }
   49% {
-    top: 51%;
+    top: 50%;
     width: 50px;
     height: 50px;
     opacity: 1;
-    background-image: url(/assets/images/svg/brown_svg.svg);
+    background-image: url(/assets/images/png/leaf2.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
     -webkit-transform:  rotateZ(130deg);
   }
   75% {
     top: 75%;
-    background-image: url(/assets/images/svg/brown_svg.svg);
+    background-image: url(/assets/images/png/leaf2.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
     width: 50px;
@@ -79,7 +82,7 @@ background-size:100% 100%;
   }
   100% {
     top: 100%;
-    background-image: url(/assets/images/svg/brown_svg.svg);
+    background-image: url(/assets/images/png/leaf2.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
     width: 50px;
